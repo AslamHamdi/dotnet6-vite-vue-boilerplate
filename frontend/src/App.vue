@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import axios from 'axios'
+import HelloWorld from "./components/HelloWorld.vue";
+import axios from "axios";
 
-axios.get('https://localhost:7057/api/v2/WeatherForecast')
+axios
+  .get("https://localhost:7057/api/v2/WeatherForecast/GetData2", {
+    params: { id: 42 },
+  })
   .then((response) => {
     console.log("resp: ", response);
   });
