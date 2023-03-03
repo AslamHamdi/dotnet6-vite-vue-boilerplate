@@ -24,6 +24,6 @@ obj
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
+#*.sln
 *.sw?
 
